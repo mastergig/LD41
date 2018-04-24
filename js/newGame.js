@@ -19,7 +19,7 @@ function start()
 
     localStorage.jogo2 = JSON.stringify( gameParameters );
     redraw();
-    setTimeout(function(){runTimer()},timing);
+    runTimer();
 }
 
 localStorage.jogo2 = JSON.stringify({
@@ -29,7 +29,8 @@ localStorage.jogo2 = JSON.stringify({
         gems:0
     },
     current:'t1',
-    timer: 1000,
+    timer: 100,
+    timed:false,
     vazio:{
         linha:4,
         coluna:4

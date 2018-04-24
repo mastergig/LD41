@@ -34,6 +34,24 @@ function playMsc()
 	setTimeout(function(){playMsc()},30000);
 }
 
+function fixScore()
+{
+    var JSONstr1 = localStorage.getItem('jogo'); 
+    //console.log(JSONstr1);
+    var gameParameters1 = JSON.parse(JSONstr1);
+    var JSONstr2 = localStorage.getItem('jogo2'); 
+    //console.log(JSONstr2);
+    var gameParameters2 = JSON.parse(JSONstr2);
+
+	var score = 0;
+	score +=  gameParameters1.score.pontos;
+	score +=  gameParameters2.score.pontos;
+
+	document.getElementById('score').innerHTML = score;
+
+	setTimeout(function(){fixScore();} , 10 )
+}
+
 function randomBool()
 {
   min = Math.ceil(0);

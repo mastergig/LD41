@@ -68,6 +68,7 @@ function readRun() //run the game by the time
         //time goes by...
         gameParameters.time += gameParameters.timing;
         gameParameters.timing -= 0.0135;
+        gameParameters.score.pontos = score;
     }
     if(gameParameters.timing < 10) gameParameters.timing = 10;
 
@@ -185,7 +186,10 @@ function calcBullets()
     if(charge <= 0 && shooting)
     {
         charge = 6;
-                        playSound('hit.wav');
+        var min = Math.ceil(1);
+        var max = Math.floor(3);
+        var randomN = Math.floor(Math.random() * (max - min)) + min;
+        playSound('UP_tiro'+randomN+'.ogg');
 
         var stX = hero.offsetLeft+(hero.offsetWidth/2);
         var stY = hero.offsetTop+(hero.offsetHeight/2);
@@ -216,7 +220,7 @@ function calcEnemy()
         var stY = Math.floor((Math.random() * (115-10)) + 2);//hero.offsetTop+(hero.offsetHeight/2);
         var life = Math.floor((Math.random() * 3) + 1);
         var strDiv = "<div class='enemy type"+life+"' life='"+life+"' hit='false' score='";
-            strDiv += (life==1)?('5'):(life==2)?('20'):('50');
+            strDiv += (life==1)?('25'):(life==2)?('200'):('500');
             strDiv += "' style='top:"+stY+"; left:"+stX+"'></div>";
 
         action.innerHTML += strDiv;
@@ -274,17 +278,17 @@ function calcDamage()
                     //console.log(life);]
                     if(life == 0)
                     {
-                        special.className = "layer gameOver";
-                        special.style.backgroundImage = "url('../img/game over.gif')";
+                        //special.className = "layer gameOver";
+                        //special.style.backgroundImage = "url('../img/game over.gif')";
                         paused = true;
-                        playSound('dead.wav');
+                        //playSound('dead.wav');
                         setTimeout(function(){
                            // window.location = "credits.html";
 
                         },3000);
                     }
                     else{
-                        playSound('damage.wav');
+                        playSound('UP_impacto_jogador.ogg');
                     }
                 }
             }
@@ -305,7 +309,7 @@ function calcDamage()
             if( se1 || se2 )
             {
                 enemego.setAttribute('life',(enemego.getAttribute('life')-1));
-                        playSound('fire.wav');
+                        playSound('UP_impacto_inimigo.ogg');
                 shot.parentElement.removeChild(shot);
             }
 

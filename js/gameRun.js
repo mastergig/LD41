@@ -64,7 +64,7 @@ function callPlay(idDiv)
                                         {
                                             gameParameters.current = 't'+getRandomPos();
                                             gameParameters.score.pontos += 2000;
-                                            gameParameters.timer += 47;
+                                            gameParameters.timer += 17;
                                         }
                                         gameParameters.mapa[i].tipo = 't'+getRandomPos();
                                         gameParameters.mapa[j].tipo = 't'+getRandomPos();
