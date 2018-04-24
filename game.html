@@ -1,0 +1,56 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/game.css" />
+		<script type='text/javascript' src="js/function.js"></script>
+		<script type='text/javascript' src="js/game_functions.js"></script>
+		<script type='text/javascript' src="js/game.js"></script>
+	</head>
+	
+	<body onload='setTimeout(function(){playMsc()},30000)'  onkeypress="jogoKeyPress(event)" onkeyup="jogoKeyRelease(event)" onkeydown="jogoKeyHold(event)">  
+		<div id='jogo'>
+			
+			<div id ='jogoA'>
+				<iframe id="frameA" scrolling="no" width="250" height="118" frameborder="0" src="game/gameShooter.html"></iframe>
+			</div>
+			
+			<div id ='score'>
+				0
+			</div>
+			
+			<div id ='jogoB'>
+				<iframe id="frameB" scrolling="no" width="250" height="118" frameborder="0" src="game/gamePuzzle.html"></iframe>
+			</div>
+			
+		</div>
+
+			<audio id='bass' autoplay loop>
+				<source src="msc/Syk Rotekc - 1 - bass.ogg" type="audio/ogg">
+				Your browser does not support the audio element.
+			</audio>
+			<audio id='drum' autoplay loop>
+				<source src="msc/Syk Rotekc - 1 - drums.ogg" type="audio/ogg">
+				Your browser does not support the audio element.
+			</audio>
+			<audio id='chord' autoplay loop>
+				<source src="msc/Syk Rotekc - chords.ogg" type="audio/ogg">
+				Your browser does not support the audio element.
+			</audio>
+			<audio id='eff' autoplay loop>
+				<source src="msc/Syk Rotekc - eff perc.ogg" type="audio/ogg">
+				Your browser does not support the audio element.
+			</audio>
+			<audio id='m1' autoplay loop>
+				<source src="msc/Syk Rotekc - melodia 1.ogg" type="audio/ogg">
+				Your browser does not support the audio element.
+			</audio>
+			<audio id='m2' autoplay loop>
+				<source src="msc/Syk Rotekc - melodia 2.ogg" type="audio/ogg">
+				Your browser does not support the audio element.
+			</audio>
+			<audio id='synth' autoplay loop>
+				<source src="msc/Syk Rotekc - synth organ.ogg" type="audio/ogg">
+				Your browser does not support the audio element.
+			</audio>
+	</body>
+</html>

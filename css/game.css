@@ -1,0 +1,187 @@
+#title, #game, #hud, .layer, .bg, .fg, .paused{
+	width: 250px;
+	height: 119px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.layer{
+    position: absolute;
+    top: 0;
+    left:0;
+}
+.bg, .fg{
+    position: absolute;
+    top: 0;
+}
+#hero{
+    position: absolute;
+    left: 4px;
+    width: 35px;
+    height: 35px;
+    top: 44;
+	background: transparent url(../img/hero.gif);
+}
+#hero, .shot, .missile, .enemy, .boss{
+    position: absolute;
+    transition: all 0.1s;
+}
+
+#special{
+    z-index: 1000;
+}
+#hud{
+    z-index: 1001;
+}
+
+.paused{
+    background: rgba(255,255,255,0.25);
+    z-index: 1000;
+}
+
+.gameOver{
+    background: rgba(255,255,255,0.4);
+    z-index: 1000;
+}
+
+#bg1,#fg1{
+    left:0;
+}
+#bg2,#fg2{
+    left:250;
+}
+#bg3,#fg3{
+    left:500;
+}
+#bg4,#fg4{
+    left:750;
+}
+#bg5,#fg5{
+    left:1000;
+}
+#bg6,#fg6{
+    left:1250;
+}
+#bg7,#fg7{
+    left:1500;
+}
+#bg8,#fg8{
+    left:1750;
+}
+
+.typeA1{
+    background: transparent url(../img/5EDx.gif);
+}
+.typeA2{
+    background: transparent url(../img/5EDx.gif);
+}
+.typeA3{
+    background: transparent url(../img/5EDx.gif);
+}
+.shot{
+	width: 16px;
+	height: 16px;
+	background: transparent url(../img/shot.gif);
+}
+.heart{
+    float: right;
+    margin-top: 1px;
+    margin-right: 1px;
+    width: 3px;
+    height: 3px;
+}
+.h2{
+	background: transparent url(../img/heart2.gif);
+}
+.enemy.type1{
+	background: transparent url(../img/bat.gif);
+}
+.enemy.type2{
+	background: transparent url(../img/bat2.gif);
+}
+.enemy.type3{
+	background: transparent url(../img/bat3.gif);
+}
+.h1{
+	background: transparent url(../img/heart1.gif);
+}
+.h0{
+	background: transparent url(../img/heart0.gif);
+}
+.numbA, .numbB{
+    float: left;
+    margin-right: 1px;
+    width: 3px;
+    height: 4px;
+}
+.numbA{
+    margin-top: 1px;
+}
+.numbB{
+    margin-bottom: 1px;
+}
+.n0
+{
+	background: transparent url(../img/n0.gif);
+}
+.n1
+{
+	background: transparent url(../img/n1.gif);
+}
+.n2
+{
+	background: transparent url(../img/n2.gif);
+}
+.n3
+{
+	background: transparent url(../img/n3.gif);
+}
+.n4
+{
+	background: transparent url(../img/n4.gif);
+}
+.n5
+{
+	background: transparent url(../img/n5.gif);
+}
+.n6
+{
+	background: transparent url(../img/n6.gif);
+}
+.n7
+{
+	background: transparent url(../img/n7.gif);
+}
+.n8
+{
+	background: transparent url(../img/n8.gif);
+}
+.n9
+{
+	background: transparent url(../img/n9.gif);
+}
+
+#title{
+	background: transparent url(../img/title.gif);
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    display: block;
+}
+#characters{
+    padding-top: 43;
+}
+#characters a{
+    margin: 0;
+    width: 12px;
+    height: 18px;
+    text-decoration: none;
+    display: block;
+    float: left;
+    padding: 0;
+    z-index: 10;
+    position:relative;
+}
+#characters a:hover{
+    z-index: 1000 !important;
+}

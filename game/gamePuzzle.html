@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="../css/game2.css" />
+		<link rel="stylesheet" type="text/css" href="../css/style.css" />
+		<link rel="stylesheet" type="text/css" href="../css/teste2.css" />
+		<script type='text/javascript' src="../js/newGame.js"></script>
+		<script type='text/javascript' src="../js/function.js"></script>
+		<script type='text/javascript' src="../js/gameRun.js"></script>
+		<script type='text/javascript' src="../js/game_functions.js"></script>
+	</head>
+	
+	<body onload="start();">
+			<div id ='gameB' class='gameSquare'>
+				<div id='leftBar'></div>
+				<div id='gameSquare'>
+					<div id='A1' class='caixaJogo linha1 coluna1' onclick='callPlay("A1")'></div>
+					<div id='A2' class='caixaJogo linha1 coluna2' onclick='callPlay("A2")'></div>
+					<div id='A3' class='caixaJogo linha1 coluna3' onclick='callPlay("A3")'></div>
+					<div id='A4' class='caixaJogo linha1 coluna4' onclick='callPlay("A4")'></div>
+					<div id='B1' class='caixaJogo linha2 coluna1' onclick='callPlay("B1")'></div>
+					<div id='B2' class='caixaJogo linha2 coluna2' onclick='callPlay("B2")'></div>
+					<div id='B3' class='caixaJogo linha2 coluna3' onclick='callPlay("B3")'></div>
+					<div id='B4' class='caixaJogo linha2 coluna4' onclick='callPlay("B4")'></div>
+					<div id='C1' class='caixaJogo linha3 coluna1' onclick='callPlay("C1")'></div>
+					<div id='C2' class='caixaJogo linha3 coluna2' onclick='callPlay("C2")'></div>
+					<div id='C3' class='caixaJogo linha3 coluna3' onclick='callPlay("C3")'></div>
+					<div id='C4' class='caixaJogo linha3 coluna4' onclick='callPlay("C4")'></div>
+					<div id='D1' class='caixaJogo linha4 coluna1' onclick='callPlay("D1")'></div>
+					<div id='D2' class='caixaJogo linha4 coluna2' onclick='callPlay("D2")'></div>
+					<div id='D3' class='caixaJogo linha4 coluna3' onclick='callPlay("D3")'></div>
+				</div>
+				<div id='rightBar'>
+					<div style='flex:1;'></div>
+					<div id='time'>100</div>
+					<div id='ativo' class='caixaJogo t1'></div>
+					<div style='flex:1;'></div>
+					<div id='doctor'></div>
+				</div>
+			</div>
+	</body>
+</html>

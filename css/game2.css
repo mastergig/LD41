@@ -1,0 +1,115 @@
+*{
+	-webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;
+	font-family: "Impact";
+	transition: all 1s;
+}
+
+#game{
+	background: blue;
+	width: 500px;
+	height: 500px;
+	flex-direction: column;
+}
+#game, .gameSquare{
+	display: flex;
+}
+#gameB{
+	background: yellow;
+	width: 250px;
+	height: 118px;
+}
+#score{
+	height: 24px;
+	text-align: right;
+	padding-right: 10px;
+}
+#leftBar, #rightBar{
+	flex:1;
+	display: flex;
+	flex-direction: column;
+}
+#gameSquare{
+	background: orange;
+	width: 118px;
+	height: 118px;
+	overflow:hidden;
+}
+#gameSquare div{
+	position: absolute;
+}
+.caixaJogo{
+	width: 25px;
+	height: 25px;
+	border: solid 1px #000;
+	display: block;
+}
+.linha1
+{
+    top:2px;
+}
+.linha2
+{
+    top:30px;
+}
+.linha3
+{
+    top:59px;
+}
+.linha4
+{
+    top:88px;
+}
+.coluna1
+{
+    left:68px;
+}
+.coluna2
+{
+    left:97px;
+}
+.coluna3
+{
+    left:126px;
+}
+.coluna4
+{
+    left:155px;
+}
+
+.t1{
+	background: transparent url(../img/t1.gif);
+}
+.t2{
+	background: transparent url(../img/t2.gif);
+}
+.t3{
+	background: transparent url(../img/t3.gif);
+}
+.t4{
+	background: transparent url(../img/t4.gif);
+}
+.t5{
+	background: transparent url(../img/t5.gif);
+}
+.t6{
+	background: transparent url(../img/t6.gif);
+}
+#doctor{
+	background: transparent url(../img/doc.gif);
+	background-position: center center;
+	background-repeat: no-repeat; 
+	height: 40px;
+}
+#ativo{
+	background-position: center center;
+	background-repeat: no-repeat; 
+	height: 25px;
+	border: 0;
+    width: 100%;
+}
+#time{
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	text-align: center;
+	line-height: 20px;
+	font-size: 16px;
+}
